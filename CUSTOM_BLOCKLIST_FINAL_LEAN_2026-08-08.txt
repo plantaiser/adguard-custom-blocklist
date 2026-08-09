@@ -1,0 +1,403 @@
+! ==================================================
+! CUSTOM BLOCKLIST FINAL LEAN — 2026-08-08
+! AdGuard Home / AdBlock DNS syntax
+! Objetivo: bloqueos manuales, telemetría, privacidad y sitios elegidos.
+! Diseñada para complementar HaGeZi Pro++, Phishing Army,
+! HaGeZi Native y HaGeZi Encrypted DNS Bypass.
+!
+! NOTA: gvt2.com NO se bloquea de forma global.
+! Se conservan solamente los hosts beacons*.gvt2.com solicitados.
+! La regla local de la cámara se mantiene en archivo separado.
+! Reglas de bloqueo: 329
+! Excepciones: 9
+! ==================================================
+
+! ==================================================
+! GOOGLE DOMAIN RELIABILITY / SOSPECHOSOS / APUESTAS
+! ==================================================
+||beacons3.gvt2.com^
+||beacons4.gvt2.com^
+||beacons5.gvt2.com^
+||beacons.gcp.gvt2.com^
+||cbcf4gg3f.com^
+||sxcrwendu.com^
+||d1t5kow2rdtotr.cloudfront.net^
+||epgshare01.online^
+||iptv-epg.org^
+||t.me^
+||sirius.mwbsys.com^
+||bet365.com^
+||betsson.com^
+||bplay.bet.ar^
+||codere.bet.ar^
+||1xbet.com^
+||casino.bet.ar^
+||betano.com.ar^
+||sportingbet.com.ar^
+||williamhill.com^
+||betway.com^
+||draftkings.com^
+||bwin.com^
+||codere.com^
+||betfair.com^
+||pokerstars.com^
+||888casino.com^
+! ==================================================
+! MEDIOS Y PRENSA — GRUPO CLARÍN Y LA NACIÓN
+! ==================================================
+||tn.com.ar^
+||lanacion.com.ar^
+||clarin.com^
+||clarin.com.ar^
+||grupoclarin.com^
+||grupoclarin.com.ar^
+||ole.com.ar^
+||lavoz.com.ar^
+||eltrecetv.com.ar^
+||eltrece.com.ar^
+||artear.com^
+||ciudad.com.ar^
+||cucinare.tv^
+||radiomitre.com.ar^
+||la100.com.ar^
+||cienradios.com^
+||losandes.com.ar^
+||viapais.com.ar^
+||bonvivir.com^
+||revistaliving.com^
+||somosohlala.com^
+||canchallena.com^
+! ==================================================
+! APK XPR / IPTV / DOMINIOS SOSPECHOSOS Y DGA (MALWARE)
+! ==================================================
+||tvmagis.net^
+||uniquetv.live^
+||youcine.net^
+||mgs-free-e6046.appspot.com^
+||mygd.ihfjsrkdw.com^
+||banamyi.vb1kivdlvc.com^
+||nabbnibd.faolmbghu.com^
+||yuwc.swzablvpm.com^
+||ahoco.cpinfqhud.com^
+||vnhd.uhfoadysw.com^
+||aluve.rdgqkfxio.com^
+||ncoerx.22kjb1hqcg3.com^
+||qunga.jwat78rkr.com^
+||hgfc.pvwacsgqh.com^
+||cweims.obiajnwhpu.com^
+||zudna.uz6exgbxah.com^
+||nmbde.ornmwqyup.com^
+||magloud.y6oseldsc.online^
+! ==================================================
+! MERCADOLIBRE / MERCADO PAGO
+! ==================================================
+||analytics.mercadolibre.com^
+||tracking.mercadolibre.com^
+||events.mercadolibre.com^
+||ads.mercadolibre.com^
+||advertising.mercadolibre.com^
+||metrics.mercadolibre.com^
+||analytics.mercadopago.com^
+||tracking.mercadopago.com^
+||events.mercadopago.com^
+||metrics.mercadopago.com^
+||ads.mercadopago.com^
+||analytics.mercadolibre.com.ar^
+||tracking.mercadolibre.com.ar^
+||events.mercadolibre.com.ar^
+||metrics.mercadolibre.com.ar^
+||analytics.mercadopago.com.ar^
+||tracking.mercadopago.com.ar^
+||events.mercadopago.com.ar^
+||metrics.mercadopago.com.ar^
+! ==================================================
+! TELEMETRÍA COMÚN (Firebase, Analytics, Sentry, etc.)
+! ==================================================
+||crashlytics.com^
+||google-analytics.com^
+||googletagmanager.com^
+||doubleclick.net^
+||segment.io^
+||segment.com^
+||amplitude.com^
+||mixpanel.com^
+||appsflyer.com^
+||adjust.com^
+||branch.io^
+||sentry.io^
+||browser.sentry-cdn.com^
+||datadoghq-browser-agent.com^
+||logs.browser-intake-datadoghq.com^
+||rum.browser-intake-datadoghq.com^
+||firebaselogging.googleapis.com^
+||app-measurement.com^
+||clientmetrics-pa.googleapis.com^
+||growth-pa.googleapis.com^
+! ==================================================
+! IPTV / ANDROID TV / CHINA / BAIDU / LEINIAO
+! ==================================================
+||appmetrica.yandex.com^
+||yandexmetrica.com^
+||umeng.com^
+||bugly.qq.com^
+||baidu.com^
+||qiniu.com^
+||qiniudn.com^
+||adservice.google.com^
+||admob.com^
+||adsafeprotected.com^
+||hwupgrade-o.api.leiniao.com^
+! ==================================================
+! DJI + HIKVISION + AMAZON FIRE
+! ==================================================
+||api.djiservice.org^
+||flysafe-api.dji.com^
+||mydjiflight.dji.com^
+||account-api.dji.com^
+||app-h5.dji.com^
+||mimo.skypixel.com^
+||statistical-report.djiservice.org^
+||dev.hik-connect.com^
+||dev.eu.hik-connect.com^
+||dev.us.hik-connect.com^
+||litedev.hik-connect.com^
+||litedev.eu.hik-connect.com^
+||litedev.us.hik-connect.com^
+||arcus-uswest.amazon.com^
+||arcus-useast.amazon.com^
+||dcape-na.amazon.com^
+||dp-gw-na.amazon.com^
+||device-metrics-us.amazon.com^
+||device-metrics-us-2.amazon.com^
+||mads.amazon.com^
+||mads-eu.amazon.com^
+||mas-ext.amazon.com^
+||mas-ext-eu.amazon.com^
+||fls-na.amazon.com^
+||fls-eu.amazon.com^
+||aviary.amazon.com^
+||aviary.amazon.de^
+! ==================================================
+! SISTEMAS OPERATIVOS Y NAVEGADORES (MS, Apple, Chrome, Linux, Mozilla)
+! ==================================================
+||vortex.data.microsoft.com^
+||vortex-win.data.microsoft.com^
+||us-vortex-events.data.microsoft.com^
+||telemetry.microsoft.com^
+||sqm.microsoft.com^
+||settings-win.data.microsoft.com^
+||browser.events.data.microsoft.com^
+||self.events.data.microsoft.com^
+||watson.microsoft.com^
+||diagnostics.office.com^
+||collector.azure.microsoft.cloud^
+||api.applicationinsights.microsoft.com^
+||eu-mobile.events.data.microsoft.com^
+||eu-office.events.data.microsoft.com^
+||eu-teams.events.data.microsoft.com^
+||feedback.microsoft.com^
+||feedback.windows.com^
+||redir.metaservices.microsoft.com^
+||reports.wes.microsoft.com^
+||stats.microsoft.com^
+||cstat.g.aaplimg.com^
+||diagassets.g.aaplimg.com^
+||iphonesubmissions.v.aaplimg.com^
+||prod-event-relay-api.v.aaplimg.com^
+||apple.comscoreresearch.com^
+||metrics.icloud.com^
+||metrics.mzstatic.com^
+||p-events.apple.com^
+||suconfig.apple.com^
+||xp.apple.com^
+||static.ips.apple.com^
+||analytics.apple.com^
+||ads.apple.com^
+||chromoting.googleapis.com^
+||remoting.googleapis.com^
+||telemetry.chromeos.oop.br^
+||metrics.chromeos.oop.br^
+||cloudcast.googleapis.com^
+||cros-telemetry.googleapis.com^
+||popcon.ubuntu.com^
+||metrics.ubuntu.com^
+||insights.ubuntu.com^
+||report.ubuntu.com^
+||telemetry.fedoraproject.org^
+||popcon.debian.org^
+||pkgstats.archlinux.de^
+||metrics.services.mozilla.com^
+||telemetry-experiment.cdn.mozilla.net^
+! ==================================================
+! REDES SOCIALES Y PLATAFORMAS — TELEMETRÍA
+! ==================================================
+||analytics.twitter.com^
+||science.discord.com^
+||alb.reddit.com^
+||spade.twitch.tv^
+||snap.licdn.com^
+! ==================================================
+! STREAMING Y MÚSICA — TELEMETRÍA Y BLOQUEOS
+! ==================================================
+||s.youtube.com^
+||video-stats.l.google.com^
+||metrics.youtube.com^
+||rr14---sn-uxaxjxougv-x1xll.googlevideo.com^
+||customerevents.netflix.com^
+||ichnaea.netflix.com^
+||nrdp.nccp.netflix.com^
+||logs.netflix.com^
+||darnuid.netflix.com^
+||telemetry.netflix.com^
+||beacon.netflix.com^
+||analytics.netflix.com^
+||events.netflix.com^
+||metrics.netflix.com^
+||android.prod.cloud.netflix.com^
+||ios.prod.cloud.netflix.com^
+||web.prod.cloud.netflix.com^
+||bam.nr-data.net^
+||telemetry-service.disneyplus.com^
+||telemetry.disneyplus.com^
+||events.disneyplus.com^
+||metrics.disneyplus.com^
+||analytics.disneyplus.com^
+||logs.disneyplus.com^
+||beacon.disneyplus.com^
+||conviva.com^
+||newrelic.com^
+||disneyadvertising.com^
+||dssott.com^
+||dssedge.com^
+||analytics.spotify.com^
+||log.spotify.com^
+||spclient.wg.spotify.com^
+||aet.spotify.com^
+||adeventtracker.spotify.com^
+||ads-akp.spotify.com^
+||audio-akp.spotify.com^
+||eventlogger.spotify.com^
+||metrics.spotify.com^
+||telemetry.spotify.com^
+||reports.spotify.com^
+||pixel.spotify.com^
+||audio-ads.spotify.com^
+||ads-fa.spotify.com^
+||analytics.amazon.com^
+||tracking.amazon.com^
+||advertising.amazon.com^
+||amazon-adsystem.com^
+||unagi.amazon.com^
+||global.telemetry.insights.video.a2z.com^
+||sonar.prime-video.amazon.dev^
+||prime-video-ads.com^
+||adapis.amazon.com^
+||metrics.primevideo.com^
+||events.primevideo.com^
+||logs.primevideo.com^
+||cdn-images.dzcdn.net^
+! ==================================================
+! INTELIGENCIA ARTIFICIAL (IA) — TELEMETRÍA Y ANALÍTICA
+! ==================================================
+||openaicom.intercom-clicks.com^
+||segment-api.openai.com^
+||statsig.api.openai.com^
+||api.statsig.com^
+||telemetry.openai.com^
+||chatgpt-telemetry.openai.com^
+||stats.openai.com^
+||tracing.openai.com^
+||telemetry.gemini.google.com^
+||analytics.gemini.google.com^
+||gemini-telemetry.google.com^
+||bard-telemetry.google.com^
+||telemetry.bard.google.com^
+||telemetry.anthropic.com^
+||analytics.anthropic.com^
+||stats.anthropic.com^
+||telemetry.copilot.microsoft.com^
+||copilot-telemetry.microsoft.com^
+||telemetry.githubcopilot.com^
+||copilot-telemetry.githubusercontent.com^
+||analytics.perplexity.ai^
+||telemetry.perplexity.ai^
+||errors.perplexity.ai^
+||stats.perplexity.ai^
+||metrics.lepton.ai^
+||telemetry.huggingface.co^
+||analytics.huggingface.co^
+||telemetry.stability.ai^
+||analytics.stability.ai^
+||telemetry.poe.com^
+||analytics.poe.com^
+||telemetry.elevenlabs.io^
+||analytics.elevenlabs.io^
+! ==================================================
+! HARDWARE, MARCAS PC Y REMOTO (AMD, Intel, ASUS, Dell, HP, Lenovo, AnyDesk, TeamViewer)
+! ==================================================
+||telemetry.amd.com^
+||rrs.amd.com^
+||tracker.amd.com^
+||telemetry.intel.com^
+||analytics.intel.com^
+||ichnaea.intel.com^
+||telemetry.anydesk.com^
+||trace.anydesk.com^
+||analytics.anydesk.com^
+||telemetry.teamviewer.com^
+||analytics.teamviewer.com^
+||ping.teamviewer.com^
+||events.teamviewer.com^
+||telemetry.asus.com^
+||analytics.asus.com^
+||logging.asus.com^
+||telemetry.dell.com^
+||analytics.dell.com^
+||metrics.dell.com^
+||dell-telemetry.com^
+||csgdtm-svc-agent.dell.com^
+||bss-usprod.hpdaas.com^
+||telemetry.lenovo.com^
+||analytics.lenovo.com^
+||stats.lenovo.com^
+||metrics.lenovo.com^
+! ==================================================
+! APPS ESPECÍFICAS Y SERVICIOS VARIOS
+! ==================================================
+||sentry-webapp.quillbot.com^
+||collector.quillbot.com^
+||telemetry.ccleaner.com^
+||analytics.ff.avast.com^
+||ipm-provider.ff.avast.com^
+||analytics.4kdownload.com^
+||telemetry.4kdownload.com^
+||calendarpushsubscription-pa.googleapis.com^
+! ==================================================
+! TELEMETRÍA ANTIVIRUS Y DISPOSITIVOS HUAWEI
+! ==================================================
+||telemetry.pandasecurity.com^
+||stats.pandasecurity.com^
+||telemetry.malwarebytes.com^
+||telemetry.malwarebytes.org^
+||mup.amp.mcafee.com^
+||sportdata-dra.things.dbankcloud.com^
+! ==================================================
+! SITIOS BLOQUEADOS MANUALMENTE
+! ==================================================
+||pastebin.com^
+||apksam.com^
+! ==================================================
+! EXCEPCIONES Y REGLAS DE PERMISO (OBLIGATORIAS AL FINAL)
+! ==================================================
+! Google Play (Evita romper descargas/tienda)
+@@||play-lh.googleusercontent.com^
+@@||playstoregatewayadapter-pa.googleapis.com^
+@@||prod-lt-playstoregatewayadapter-pa.googleapis.com^
+@@||play-fe.googleapis.com^
+@@||android.clients.google.com^
+@@||clients3.google.com^
+! YouTube Miniaturas
+@@||i.ytimg.com^
+! Twitch (Desbloqueo forzado para reproductor)
+@@||twitch.tv^
+@@||player.twitch.tv^
