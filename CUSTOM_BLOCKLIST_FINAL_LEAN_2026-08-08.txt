@@ -8,7 +8,8 @@
 ! NOTA: gvt2.com NO se bloquea de forma global.
 ! Se conservan solamente los hosts beacons*.gvt2.com solicitados.
 ! La regla local de la cámara se mantiene en archivo separado.
-! Reglas de bloqueo: 329
+! Actualización Zen 2026-08-08: agregados beacons.gvt2.com, beacons2.gvt2.com y beacons5.gvt3.com.
+! Reglas de bloqueo: 332
 ! Excepciones: 9
 ! ==================================================
 
@@ -19,6 +20,9 @@
 ||beacons4.gvt2.com^
 ||beacons5.gvt2.com^
 ||beacons.gcp.gvt2.com^
+||beacons.gvt2.com^
+||beacons2.gvt2.com^
+||beacons5.gvt3.com^
 ||cbcf4gg3f.com^
 ||sxcrwendu.com^
 ||d1t5kow2rdtotr.cloudfront.net^
