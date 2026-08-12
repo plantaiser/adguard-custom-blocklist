@@ -9,7 +9,8 @@
 ! Se conservan solamente los hosts beacons*.gvt2.com solicitados.
 ! La regla local de la cámara se mantiene en archivo separado.
 ! Actualización Zen 2026-08-08: agregados beacons.gvt2.com, beacons2.gvt2.com y beacons5.gvt3.com.
-! Reglas de bloqueo: 332
+! Actualización 2026-08-12: agregado cc-api-data.adobe.io (Adobe ingest/telemetría).
+! Reglas de bloqueo: 333
 ! Excepciones: 9
 ! ==================================================
 
@@ -246,6 +247,7 @@
 ||s.youtube.com^
 ||video-stats.l.google.com^
 ||metrics.youtube.com^
+! YouTube: /api/stats/watchtime usa www.youtube.com; no se bloquea el dominio completo para no romper YouTube.
 ||rr14---sn-uxaxjxougv-x1xll.googlevideo.com^
 ||customerevents.netflix.com^
 ||ichnaea.netflix.com^
@@ -376,6 +378,7 @@
 ||analytics.4kdownload.com^
 ||telemetry.4kdownload.com^
 ||calendarpushsubscription-pa.googleapis.com^
+||cc-api-data.adobe.io^
 ! ==================================================
 ! TELEMETRÍA ANTIVIRUS Y DISPOSITIVOS HUAWEI
 ! ==================================================
