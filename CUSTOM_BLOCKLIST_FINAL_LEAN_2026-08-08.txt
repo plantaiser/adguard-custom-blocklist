@@ -11,7 +11,8 @@
 ! Actualización Zen 2026-08-08: agregados beacons.gvt2.com, beacons2.gvt2.com y beacons5.gvt3.com.
 ! Actualización 2026-08-12: agregado cc-api-data.adobe.io (Adobe ingest/telemetría).
 ! Actualización Zen 2026-08-19: agregados xuper-tv.com, xupertv.mobi, cuevana.bi y hits.seeyoufarm.com.
-! Reglas de bloqueo: 337
+! Actualización telemetría 2026-08-19: agregados Desktop Commander, Avast, Malwarebytes y Adobe observados en AdGuard.
+! Reglas de bloqueo: 342
 ! Excepciones: 9
 ! ==================================================
 
@@ -380,10 +381,14 @@
 ||telemetry.ccleaner.com^
 ||analytics.ff.avast.com^
 ||ipm-provider.ff.avast.com^
+||alpha-crap.ff.avast.com^
 ||analytics.4kdownload.com^
 ||telemetry.4kdownload.com^
 ||calendarpushsubscription-pa.googleapis.com^
 ||cc-api-data.adobe.io^
+||sstats.adobe.com^
+||adobe.com.ssl.d1.sc.omtrdc.net^
+||dc-telemetry-proxy-83847352264.europe-west1.run.app^
 ! ==================================================
 ! TELEMETRÍA ANTIVIRUS Y DISPOSITIVOS HUAWEI
 ! ==================================================
@@ -391,6 +396,7 @@
 ||stats.pandasecurity.com^
 ||telemetry.malwarebytes.com^
 ||telemetry.malwarebytes.org^
+||mmac-c-5-25-2.v2.tel.malwarebytes.com^
 ||mup.amp.mcafee.com^
 ||sportdata-dra.things.dbankcloud.com^
 ! ==================================================
