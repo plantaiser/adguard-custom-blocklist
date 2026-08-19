@@ -14,8 +14,9 @@
 ! Actualización telemetría 2026-08-19: agregados Desktop Commander, Avast, Malwarebytes y Adobe observados en AdGuard.
 ! Actualización telemetría 2026-08-19 (2): agregados Mozilla, Microsoft Aria/events, Desktop Commander y Panda observados en AdGuard.
 ! Actualización monitoreo remoto 2026-08-19: agregados Samsung Find, Intel DSA y Panda hardware monitoring; restaurado events.stats.openai.com de la lista manual histórica.
+! Actualización App Store 2026-08-19: excepción puntual para bag.itunes.apple.com.
 ! Reglas de bloqueo: 351
-! Excepciones: 9
+! Excepciones: 10
 ! ==================================================
 
 ! ==================================================
@@ -430,3 +431,5 @@
 ! Twitch (Desbloqueo forzado para reproductor)
 @@||twitch.tv^
 @@||player.twitch.tv^
+! Apple App Store (excepción puntual; no libera todo *.itunes.apple.com)
+@@||bag.itunes.apple.com^
