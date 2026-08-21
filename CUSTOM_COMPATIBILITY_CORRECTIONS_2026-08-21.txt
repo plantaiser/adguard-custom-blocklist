@@ -1,0 +1,43 @@
+! ==================================================
+! CUSTOM COMPATIBILITY CORRECTIONS — 2026-08-21
+! AdGuard Home / AdBlock DNS syntax
+! Complementa HaGeZi Pro (Balanced) y bloqueos de servicios de AdGuard Home.
+! Contiene únicamente correcciones puntuales verificadas para evitar falsos positivos.
+! ==================================================
+
+! ==================================================
+! YOUTUBE — HISTORIAL / ESTADO DE REPRODUCCIÓN
+! ==================================================
+! Evita bloquear s.youtube.com cuando otras reglas interfieren con el historial.
+@@||s.youtube.com^
+
+! ==================================================
+! SPOTIFY FOR CREATORS — DASHBOARD
+! ==================================================
+! Estos dos CDN son necesarios por Spotify for Creators.
+! Fueron bloqueados por el servicio "Amazon" de AdGuard Home mediante ||cloudfront.net^.
+! Se permiten únicamente estos hosts; NO se libera cloudfront.net globalmente.
+@@||d1rx8vrt2hn1hc.cloudfront.net^
+@@||d12xoj7p9moygp.cloudfront.net^
+
+! ==================================================
+! SPOTIFY FOR CREATORS — ANALYTICS
+! ==================================================
+! HaGeZi Pro (Balanced) contiene la regla:
+! ||microfrontend-analytics-cdn.spotifycdn.com^
+! Esa regla rompe /analytics/.../overview de Spotify for Creators.
+! badfilter neutraliza únicamente esa regla exacta de la lista externa.
+||microfrontend-analytics-cdn.spotifycdn.com^$badfilter
+! Permiso explícito adicional para el CDN del microfrontend de Analytics.
+@@||microfrontend-analytics-cdn.spotifycdn.com^
+
+! ==================================================
+! NOTAS
+! ==================================================
+! - No desactiva HaGeZi Pro (Balanced).
+! - No desactiva el bloqueo del servicio Amazon.
+! - No permite *.cloudfront.net de forma global.
+! - No modifica VPN, Tailscale, firewall ni DNS upstream.
+! - La reparación de confianza de la CA de Zen en Brave/NSS es local al navegador
+!   y no corresponde a una regla DNS, por lo que no se incluye como filtro.
+! ==================================================
