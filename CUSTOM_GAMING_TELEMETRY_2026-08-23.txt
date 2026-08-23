@@ -1,0 +1,57 @@
+! ==================================================
+! CUSTOM GAMING TELEMETRY — 2026-08-23
+! AdGuard Home / AdBlock DNS syntax
+! Complemento de la lista personalizada de plantaiser.
+! Objetivo: telemetría y analítica específica de consolas
+! y servicios de analítica usados por juegos Android/iOS.
+!
+! REVISIÓN DE REDUNDANCIAS:
+! - Firebase / Google Analytics / App Measurement: ya cubiertos.
+! - AppsFlyer / Adjust / Branch: ya cubiertos.
+! - Sentry / Datadog: ya cubiertos.
+! - Microsoft/Aria: ya cubiertos; por eso no se duplican reglas Xbox.
+! - No se agregan dominios de login, PSN/Xbox/Nintendo Store,
+!   matchmaking ni servidores de juego.
+! - Nintendo: no se agregan dominios dudosos sin verificar que sean
+!   específicamente de telemetría.
+!
+! FUENTES VERIFICADAS:
+! PlayStation telemetry: block-console-servers (actualización 2026-07-17).
+! GameAnalytics: documentación oficial del servicio.
+! Unity Analytics: documentación oficial de Unity.
+! ==================================================
+
+! ==================================================
+! PLAYSTATION — TELEMETRÍA / ANALÍTICA
+! ==================================================
+||telemetry-console.api.playstation.com^
+||telemetry-cii.api.playstation.com^
+||mercury.dl.playstation.net^
+||nsx.np.dl.playstation.net^
+||nsx-e.np.dl.playstation.net^
+
+! ==================================================
+! JUEGOS ANDROID / iOS — GAMEANALYTICS
+! ==================================================
+||api.gameanalytics.com^
+||sandbox-api.gameanalytics.com^
+
+! ==================================================
+! JUEGOS ANDROID / iOS — UNITY ANALYTICS
+! ==================================================
+||collect.analytics.unity3d.com^
+
+! ==================================================
+! NOTAS DE COMPATIBILIDAD
+! ==================================================
+! No bloquear dominios amplios como playstation.com, xbox.com,
+! nintendo.com, googleapis.com, apple.com o unity3d.com completos.
+! Este archivo apunta únicamente a endpoints de recopilación/analítica
+! identificados como tales.
+!
+! Xbox: la lista principal ya contiene los endpoints Microsoft/Aria/
+! Vortex utilizados para telemetría y diagnósticos; no se duplican aquí.
+!
+! Nintendo: no se añadieron endpoints sin evidencia suficiente para
+! evitar bloquear servicios funcionales de Nintendo Switch.
+! ==================================================
