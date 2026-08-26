@@ -18,6 +18,15 @@
 ! ||microfrontend-analytics-cdn.spotifycdn.com^$badfilter
 ! @@||audio-uploaded-default-production.s3.us-west-1.amazonaws.com^
 !
+! ==================================================
+! DUCKDUCKGO — TELEMETRÍA / EXPERIMENTACIÓN
+! ==================================================
+||improving.duckduckgo.com^
+!
+! El endpoint improving.duckduckgo.com es utilizado por DuckDuckGo
+! para su motor anónimo de experimentación/mejora. Se bloquea el dominio
+! completo para impedir estas solicitudes sin afectar la navegación normal.
+!
 ! No se modifica HaGeZi Pro (Balanced), el bloqueo del servicio Amazon,
 ! VPN, Tailscale, firewall ni DNS upstream.
 ! ==================================================
