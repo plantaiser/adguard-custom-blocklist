@@ -23,10 +23,17 @@
 ! ==================================================
 ||improving.duckduckgo.com^
 !
-! El endpoint improving.duckduckgo.com es utilizado por DuckDuckGo
-! para su motor anónimo de experimentación/mejora. Se bloquea el dominio
-! completo para impedir estas solicitudes sin afectar la navegación normal.
+! El dominio improving.duckduckgo.com se bloquea para impedir sus
+! solicitudes de telemetría/experimentación.
 !
+! Se incluyen también rutas HTTPS concretas observadas dentro del dominio;
+! AdGuard Home aplica el bloqueo por dominio, por lo que las rutas y
+! parámetros de consulta quedan cubiertos por la regla anterior.
+!
+! Endpoint observado:
+! https://improving.duckduckgo.com:443/t/win_webview_post-message_success_c
+!
+! ==================================================
 ! No se modifica HaGeZi Pro (Balanced), el bloqueo del servicio Amazon,
 ! VPN, Tailscale, firewall ni DNS upstream.
 ! ==================================================
