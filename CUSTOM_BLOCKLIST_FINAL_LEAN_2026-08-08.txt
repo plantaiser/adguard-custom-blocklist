@@ -1,5 +1,5 @@
 ! ==================================================
-! CUSTOM BLOCKLIST FINAL LEAN — 2026-08-08
+! CUSTOM BLOCKLIST FINAL LEAN — 2026-08-26
 ! AdGuard Home / AdBlock DNS syntax
 ! Objetivo: bloqueos manuales, telemetría, privacidad y sitios elegidos.
 ! Diseñada para complementar HaGeZi Pro++, Phishing Army,
@@ -15,7 +15,8 @@
 ! Actualización telemetría 2026-08-19 (2): agregados Mozilla, Microsoft Aria/events, Desktop Commander y Panda observados en AdGuard.
 ! Actualización monitoreo remoto 2026-08-19: agregados Samsung Find, Intel DSA y Panda hardware monitoring; restaurado events.stats.openai.com de la lista manual histórica.
 ! Actualización App Store 2026-08-19: excepción puntual para bag.itunes.apple.com.
-! Reglas de bloqueo: 351
+! Actualización DuckDuckGo 2026-08-26: agregado improving.duckduckgo.com para bloquear telemetría/experimentación.
+! Reglas de bloqueo: 352
 ! Excepciones: 10
 ! ==================================================
 
@@ -416,6 +417,10 @@
 ! ==================================================
 ||pastebin.com^
 ||apksam.com^
+! ==================================================
+! DUCKDUCKGO — TELEMETRÍA / EXPERIMENTACIÓN
+! ==================================================
+||improving.duckduckgo.com^
 ! ==================================================
 ! EXCEPCIONES Y REGLAS DE PERMISO (OBLIGATORIAS AL FINAL)
 ! ==================================================
