@@ -1,23 +1,15 @@
 ! ==================================================
-! CUSTOM BLOCKLIST FINAL LEAN — 2026-08-26
+! CUSTOM BLOCKLIST FINAL LEAN — VERSIÓN BLINDADA Y SEGURA
 ! AdGuard Home / AdBlock DNS syntax
 ! Objetivo: bloqueos manuales, telemetría, privacidad y sitios elegidos.
 ! Diseñada para complementar HaGeZi Pro++, Phishing Army,
 ! HaGeZi Native y HaGeZi Encrypted DNS Bypass.
 !
-! NOTA: gvt2.com NO se bloquea de forma global.
-! Se conservan solamente los hosts beacons*.gvt2.com solicitados.
-! La regla local de la cámara se mantiene en archivo separado.
-! Actualización Zen 2026-08-08: agregados beacons.gvt2.com, beacons2.gvt2.com y beacons5.gvt3.com.
-! Actualización 2026-08-12: agregado cc-api-data.adobe.io (Adobe ingest/telemetría).
-! Actualización Zen 2026-08-19: agregados xuper-tv.com, xupertv.mobi, cuevana.bi y hits.seeyoufarm.com.
-! Actualización telemetría 2026-08-19: agregados Desktop Commander, Avast, Malwarebytes y Adobe observados en AdGuard.
-! Actualización telemetría 2026-08-19 (2): agregados Mozilla, Microsoft Aria/events, Desktop Commander y Panda observados en AdGuard.
-! Actualización monitoreo remoto 2026-08-19: agregados Samsung Find, Intel DSA y Panda hardware monitoring; restaurado events.stats.openai.com de la lista manual histórica.
-! Actualización App Store 2026-08-19: excepción puntual para bag.itunes.apple.com.
-! Actualización DuckDuckGo 2026-08-26: agregado improving.duckduckgo.com para bloquear telemetría/experimentación.
-! Reglas de bloqueo: 352
-! Excepciones: 10
+! MODIFICACIONES FINALES:
+! - Añadida telemetría móvil masiva (AppCenter, Bugsnag, Measurement).
+! - Añadida telemetría pura de Apple Weather y ads de Amazon.
+! - Movido s.youtube.com a excepciones para NO romper el historial de YouTube.
+! - Removido static.ips.apple.com para evitar fallos de red en iOS/macOS.
 ! ==================================================
 
 ! ==================================================
@@ -53,6 +45,7 @@
 ||betfair.com^
 ||pokerstars.com^
 ||888casino.com^
+
 ! ==================================================
 ! MEDIOS Y PRENSA — GRUPO CLARÍN Y LA NACIÓN
 ! ==================================================
@@ -78,6 +71,7 @@
 ||revistaliving.com^
 ||somosohlala.com^
 ||canchallena.com^
+
 ! ==================================================
 ! APK XPR / IPTV / DOMINIOS SOSPECHOSOS Y DGA (MALWARE)
 ! ==================================================
@@ -102,6 +96,7 @@
 ||xuper-tv.com^
 ||xupertv.mobi^
 ||cuevana.bi^
+
 ! ==================================================
 ! MERCADOLIBRE / MERCADO PAGO
 ! ==================================================
@@ -124,8 +119,9 @@
 ||tracking.mercadopago.com.ar^
 ||events.mercadopago.com.ar^
 ||metrics.mercadopago.com.ar^
+
 ! ==================================================
-! TELEMETRÍA COMÚN (Firebase, Analytics, Sentry, etc.)
+! TELEMETRÍA COMÚN MASIVA (Analytics, Crashlytics, AppCenter, Bugsnag)
 ! ==================================================
 ||crashlytics.com^
 ||google-analytics.com^
@@ -134,7 +130,9 @@
 ||segment.io^
 ||segment.com^
 ||amplitude.com^
+||api.amplitude.com^
 ||mixpanel.com^
+||api.mixpanel.com^
 ||appsflyer.com^
 ||adjust.com^
 ||branch.io^
@@ -145,9 +143,14 @@
 ||rum.browser-intake-datadoghq.com^
 ||firebaselogging.googleapis.com^
 ||app-measurement.com^
+||measurement.googleapis.com^
 ||clientmetrics-pa.googleapis.com^
 ||growth-pa.googleapis.com^
 ||hits.seeyoufarm.com^
+||in.appcenter.ms^
+||notify.bugsnag.com^
+||sessions.bugsnag.com^
+
 ! ==================================================
 ! IPTV / ANDROID TV / CHINA / BAIDU / LEINIAO
 ! ==================================================
@@ -163,8 +166,9 @@
 ||adsafeprotected.com^
 ||hwupgrade-o.api.leiniao.com^
 ||findnms.samsungiotcloud.com^
+
 ! ==================================================
-! DJI + HIKVISION + AMAZON FIRE
+! DJI + HIKVISION
 ! ==================================================
 ||api.djiservice.org^
 ||flysafe-api.dji.com^
@@ -179,22 +183,51 @@
 ||litedev.hik-connect.com^
 ||litedev.eu.hik-connect.com^
 ||litedev.us.hik-connect.com^
-||arcus-uswest.amazon.com^
-||arcus-useast.amazon.com^
-||dcape-na.amazon.com^
-||dp-gw-na.amazon.com^
-||device-metrics-us.amazon.com^
-||device-metrics-us-2.amazon.com^
+
+! ==================================================
+! AMAZON — TELEMETRÍA, MÉTRICAS Y PUBLICIDAD (Seguro para Firestick)
+! ==================================================
 ||mads.amazon.com^
 ||mads-eu.amazon.com^
-||mas-ext.amazon.com^
-||mas-ext-eu.amazon.com^
 ||fls-na.amazon.com^
 ||fls-eu.amazon.com^
 ||aviary.amazon.com^
 ||aviary.amazon.de^
+||analytics.amazon.com^
+||tracking.amazon.com^
+||advertising.amazon.com^
+||amazon-adsystem.com^
+||aax.amazon-adsystem.com^
+||aax-eu.amazon-adsystem.com^
+||aax-us-east.amazon-adsystem.com^
+||unagi.amazon.com^
+||global.telemetry.insights.video.a2z.com^
+||sonar.prime-video.amazon.dev^
+||prime-video-ads.com^
+||adapis.amazon.com^
+||metrics.primevideo.com^
+||events.primevideo.com^
+||logs.primevideo.com^
+
 ! ==================================================
-! SISTEMAS OPERATIVOS Y NAVEGADORES (MS, Apple, Chrome, Linux, Mozilla)
+! APPLE — TELEMETRÍA Y PUBLICIDAD (Sin romper iOS/macOS/Clima/App Store)
+! ==================================================
+||cstat.g.aaplimg.com^
+||diagassets.g.aaplimg.com^
+||iphonesubmissions.v.aaplimg.com^
+||prod-event-relay-api.v.aaplimg.com^
+||apple.comscoreresearch.com^
+||metrics.icloud.com^
+||metrics.mzstatic.com^
+||analytics.apple.com^
+||weather-analytics.apple.com^
+||ads.apple.com^
+||iadsdk.apple.com^
+||securemads.apple.com^
+||webcourier.apple.com^
+
+! ==================================================
+! SISTEMAS OPERATIVOS Y NAVEGADORES (MS, Chrome, Linux, Mozilla)
 ! ==================================================
 ||vortex.data.microsoft.com^
 ||vortex-win.data.microsoft.com^
@@ -218,19 +251,6 @@
 ||redir.metaservices.microsoft.com^
 ||reports.wes.microsoft.com^
 ||stats.microsoft.com^
-||cstat.g.aaplimg.com^
-||diagassets.g.aaplimg.com^
-||iphonesubmissions.v.aaplimg.com^
-||prod-event-relay-api.v.aaplimg.com^
-||apple.comscoreresearch.com^
-||metrics.icloud.com^
-||metrics.mzstatic.com^
-||p-events.apple.com^
-||suconfig.apple.com^
-||xp.apple.com^
-||static.ips.apple.com^
-||analytics.apple.com^
-||ads.apple.com^
 ||chromoting.googleapis.com^
 ||remoting.googleapis.com^
 ||telemetry.chromeos.oop.br^
@@ -247,6 +267,7 @@
 ||metrics.services.mozilla.com^
 ||telemetry-experiment.cdn.mozilla.net^
 ||incoming.telemetry.mozilla.org^
+
 ! ==================================================
 ! REDES SOCIALES Y PLATAFORMAS — TELEMETRÍA
 ! ==================================================
@@ -255,17 +276,15 @@
 ||alb.reddit.com^
 ||spade.twitch.tv^
 ||snap.licdn.com^
+
 ! ==================================================
-! STREAMING Y MÚSICA — TELEMETRÍA Y BLOQUEOS
+! STREAMING Y MÚSICA — TELEMETRÍA Y ANALÍTICA
 ! ==================================================
-||s.youtube.com^
 ||video-stats.l.google.com^
 ||metrics.youtube.com^
-! YouTube: /api/stats/watchtime usa www.youtube.com; no se bloquea el dominio completo para no romper YouTube.
 ||rr14---sn-uxaxjxougv-x1xll.googlevideo.com^
 ||customerevents.netflix.com^
 ||ichnaea.netflix.com^
-||nrdp.nccp.netflix.com^
 ||logs.netflix.com^
 ||darnuid.netflix.com^
 ||telemetry.netflix.com^
@@ -273,8 +292,6 @@
 ||analytics.netflix.com^
 ||events.netflix.com^
 ||metrics.netflix.com^
-||android.prod.cloud.netflix.com^
-||ios.prod.cloud.netflix.com^
 ||web.prod.cloud.netflix.com^
 ||bam.nr-data.net^
 ||telemetry-service.disneyplus.com^
@@ -287,11 +304,8 @@
 ||conviva.com^
 ||newrelic.com^
 ||disneyadvertising.com^
-||dssott.com^
-||dssedge.com^
 ||analytics.spotify.com^
 ||log.spotify.com^
-||spclient.wg.spotify.com^
 ||aet.spotify.com^
 ||adeventtracker.spotify.com^
 ||ads-akp.spotify.com^
@@ -303,19 +317,8 @@
 ||pixel.spotify.com^
 ||audio-ads.spotify.com^
 ||ads-fa.spotify.com^
-||analytics.amazon.com^
-||tracking.amazon.com^
-||advertising.amazon.com^
-||amazon-adsystem.com^
-||unagi.amazon.com^
-||global.telemetry.insights.video.a2z.com^
-||sonar.prime-video.amazon.dev^
-||prime-video-ads.com^
-||adapis.amazon.com^
-||metrics.primevideo.com^
-||events.primevideo.com^
-||logs.primevideo.com^
 ||cdn-images.dzcdn.net^
+
 ! ==================================================
 ! INTELIGENCIA ARTIFICIAL (IA) — TELEMETRÍA Y ANALÍTICA
 ! ==================================================
@@ -353,6 +356,7 @@
 ||analytics.poe.com^
 ||telemetry.elevenlabs.io^
 ||analytics.elevenlabs.io^
+
 ! ==================================================
 ! HARDWARE, MARCAS PC Y REMOTO (AMD, Intel, ASUS, Dell, HP, Lenovo, AnyDesk, TeamViewer)
 ! ==================================================
@@ -383,6 +387,7 @@
 ||analytics.lenovo.com^
 ||stats.lenovo.com^
 ||metrics.lenovo.com^
+
 ! ==================================================
 ! APPS ESPECÍFICAS Y SERVICIOS VARIOS
 ! ==================================================
@@ -400,6 +405,7 @@
 ||adobe.com.ssl.d1.sc.omtrdc.net^
 ||dc-telemetry-proxy-83847352264.europe-west1.run.app^
 ||telemetry.desktopcommander.app^
+
 ! ==================================================
 ! TELEMETRÍA ANTIVIRUS Y DISPOSITIVOS HUAWEI
 ! ==================================================
@@ -412,18 +418,24 @@
 ||mmac-c-5-25-2.v2.tel.malwarebytes.com^
 ||mup.amp.mcafee.com^
 ||sportdata-dra.things.dbankcloud.com^
+
 ! ==================================================
 ! SITIOS BLOQUEADOS MANUALMENTE
 ! ==================================================
 ||pastebin.com^
 ||apksam.com^
+
 ! ==================================================
 ! DUCKDUCKGO — TELEMETRÍA / EXPERIMENTACIÓN
 ! ==================================================
 ||improving.duckduckgo.com^
+
 ! ==================================================
 ! EXCEPCIONES Y REGLAS DE PERMISO (OBLIGATORIAS AL FINAL)
 ! ==================================================
+! YouTube (Historial y Miniaturas - Evita romper la app y el progreso de los videos)
+@@||s.youtube.com^
+@@||i.ytimg.com^
 ! Google Play (Evita romper descargas/tienda)
 @@||play-lh.googleusercontent.com^
 @@||playstoregatewayadapter-pa.googleapis.com^
@@ -431,10 +443,8 @@
 @@||play-fe.googleapis.com^
 @@||android.clients.google.com^
 @@||clients3.google.com^
-! YouTube Miniaturas
-@@||i.ytimg.com^
 ! Twitch (Desbloqueo forzado para reproductor)
 @@||twitch.tv^
 @@||player.twitch.tv^
-! Apple App Store (excepción puntual; no libera todo *.itunes.apple.com)
+! Apple App Store (Excepción puntual)
 @@||bag.itunes.apple.com^
