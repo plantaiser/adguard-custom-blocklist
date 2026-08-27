@@ -215,16 +215,14 @@
 ||cstat.g.aaplimg.com^
 ||diagassets.g.aaplimg.com^
 ||iphonesubmissions.v.aaplimg.com^
-||prod-event-relay-api.v.aaplimg.com^
 ||apple.comscoreresearch.com^
 ||metrics.icloud.com^
 ||metrics.mzstatic.com^
 ||analytics.apple.com^
-||weather-analytics.apple.com^
 ||ads.apple.com^
 ||iadsdk.apple.com^
 ||securemads.apple.com^
-||webcourier.apple.com^
+||weather-analytics.apple.com^
 
 ! ==================================================
 ! SISTEMAS OPERATIVOS Y NAVEGADORES (MS, Chrome, Linux, Mozilla)
