@@ -210,6 +210,6 @@
 ! Apple App Store
 @@||bag.itunes.apple.com^
 
-!!! DNS PRIVADOS!!!
+! ===== EXCEPCIONES NECESARIAS =====
 @@||dns.adguard-dns.com^
 
