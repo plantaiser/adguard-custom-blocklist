@@ -211,5 +211,14 @@
 @@||bag.itunes.apple.com^
 
 ! ===== EXCEPCIONES NECESARIAS =====
+@@||s.youtube.com^
+@@||d1rx8vrt2hn1hc.cloudfront.net^
+@@||d12xoj7p9moygp.cloudfront.net^
+@@||microfrontend-analytics-cdn.spotifycdn.com^
+||microfrontend-analytics-cdn.spotifycdn.com^$badfilter
+@@||audio-uploaded-default-production.s3.us-west-1.amazonaws.com^
+@@||sirius.mwbsys.com
 @@||dns.adguard-dns.com^
+@@||adguard-dns.com^
+
 
