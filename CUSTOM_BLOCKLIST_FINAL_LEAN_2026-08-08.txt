@@ -209,3 +209,7 @@
 @@||player.twitch.tv^
 ! Apple App Store
 @@||bag.itunes.apple.com^
+
+!!! DNS PRIVADOS!!!
+@@||dns.adguard-dns.com^
+
