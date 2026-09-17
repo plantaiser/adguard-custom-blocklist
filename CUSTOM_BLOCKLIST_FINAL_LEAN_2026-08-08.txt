@@ -1,8 +1,4 @@
-! MODIFICACIONES:
-! - Eliminada toda la telemetría global (OS, Antivirus, Navegadores comunes, Streaming) 
-!   porque YA ESTÁ BLOQUEADA por HaGeZi Native Tracking y HaGeZi Pro++.
-! - Se conservan reglas LATAM (MercadoLibre, Clarín, Apuestas AR).
-! - Se conserva telemetría de IA agresiva y hardware específico (DJI/Hikvision).
+
 ! ==================================================
 
 ! ==================================================
@@ -131,7 +127,7 @@
 ||litedev.us.hik-connect.com^
 
 ! ==================================================
-! INTELIGENCIA ARTIFICIAL (IA) — TELEMETRÍA Y ANALÍTICA (Frecuentemente no cubiertas en listas masivas)
+! INTELIGENCIA ARTIFICIAL (IA) — TELEMETRÍA Y ANALÍTICA
 ! ==================================================
 ||openaicom.intercom-clicks.com^
 ||segment-api.openai.com^
@@ -190,13 +186,17 @@
 ! ==================================================
 ! EXCEPCIONES Y REGLAS DE PERMISO (OBLIGATORIAS AL FINAL)
 ! ==================================================
-! App Clima de Apple (macOS / iOS)
+
+! App Tiempo / Weather de Apple (macOS / iOS)
 @@||weather-data.apple.com^
 @@||weather-edge.apple.com^
 @@||weather-analytics.apple.com^
+@@||fpinit.itunes.apple.com^
+
 ! YouTube (Historial y Miniaturas)
 @@||s.youtube.com^
 @@||i.ytimg.com^
+
 ! Google Play
 @@||play-lh.googleusercontent.com^
 @@||playstoregatewayadapter-pa.googleapis.com^
@@ -204,21 +204,20 @@
 @@||play-fe.googleapis.com^
 @@||android.clients.google.com^
 @@||clients3.google.com^
+
 ! Twitch
 @@||twitch.tv^
 @@||player.twitch.tv^
+
 ! Apple App Store
 @@||bag.itunes.apple.com^
 
 ! ===== EXCEPCIONES NECESARIAS =====
-@@||s.youtube.com^
 @@||d1rx8vrt2hn1hc.cloudfront.net^
 @@||d12xoj7p9moygp.cloudfront.net^
 @@||microfrontend-analytics-cdn.spotifycdn.com^
 ||microfrontend-analytics-cdn.spotifycdn.com^$badfilter
 @@||audio-uploaded-default-production.s3.us-west-1.amazonaws.com^
-@@||sirius.mwbsys.com
+@@||sirius.mwbsys.com^
 @@||dns.adguard-dns.com^
 @@||adguard-dns.com^
-
-
