@@ -222,6 +222,7 @@
 @@||bag.itunes.apple.com^
 
 ! ===== EXCEPCIONES NECESARIAS =====
+@@||57j4mtvcjjf7siqnnvkixb5d3i0uvjei.lambda-url.us-east-1.on.aws^
 @@||d1rx8vrt2hn1hc.cloudfront.net^
 @@||d12xoj7p9moygp.cloudfront.net^
 @@||microfrontend-analytics-cdn.spotifycdn.com^
