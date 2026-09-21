@@ -1,5 +1,14 @@
 ! ==================================================
-! CUSTOM GAMING TELEMETRY — 2026-08-23
+! COSAS RARAS
+! ==================================================
+
+||ucpjdhivl.com^
+||jgrqyxupl.com^
+||hetvomaug.com^
+||cfh4cd324.com^
+
+! ==================================================
+! CUSTOM GAMING TELEMETRY — 2026-09-20
 ! AdGuard Home / AdBlock DNS syntax
 ! Complemento de la lista personalizada de plantaiser.
 ! Objetivo: telemetría y analítica específica de consolas
@@ -16,7 +25,7 @@
 !   específicamente de telemetría.
 !
 ! FUENTES VERIFICADAS:
-! PlayStation telemetry: block-console-servers (actualización 2026-07-17).
+! PlayStation telemetry: block-console-servers (actualización 2026-09-20).
 ! GameAnalytics: documentación oficial del servicio.
 ! Unity Analytics: documentación oficial de Unity.
 ! ==================================================
