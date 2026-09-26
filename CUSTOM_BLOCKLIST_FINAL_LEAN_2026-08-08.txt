@@ -1,3 +1,5 @@
+! Revisión: 2026-09-26. Complemento de HaGeZi Pro; ver README.md.
+! Bloqueos cubiertos por HaGeZi Pro retirados para evitar redundancias.
 ! ==================================================
 ! COSAS RARAS
 ! ==================================================
@@ -11,15 +13,8 @@
 ||g4gdfht6.com^
 
 ! ==================================================
-! GOOGLE DOMAIN RELIABILITY / SOSPECHOSOS / APUESTAS (No cubiertas por HaGeZi default)
+! DOMINIOS SOSPECHOSOS / APUESTAS (Bloqueos personalizados)
 ! ==================================================
-||beacons3.gvt2.com^
-||beacons4.gvt2.com^
-||beacons5.gvt2.com^
-||beacons.gcp.gvt2.com^
-||beacons.gvt2.com^
-||beacons2.gvt2.com^
-||beacons5.gvt3.com^
 ||cbcf4gg3f.com^
 ||sxcrwendu.com^
 ||d1t5kow2rdtotr.cloudfront.net^
@@ -97,22 +92,17 @@
 ! ==================================================
 ! MERCADOLIBRE / MERCADO PAGO (Telemetría regional)
 ! ==================================================
-||analytics.mercadolibre.com^
 ||tracking.mercadolibre.com^
-||events.mercadolibre.com^
 ||ads.mercadolibre.com^
 ||advertising.mercadolibre.com^
 ||metrics.mercadolibre.com^
-||analytics.mercadopago.com^
 ||tracking.mercadopago.com^
-||events.mercadopago.com^
 ||metrics.mercadopago.com^
 ||ads.mercadopago.com^
 ||analytics.mercadolibre.com.ar^
 ||tracking.mercadolibre.com.ar^
 ||events.mercadolibre.com.ar^
 ||metrics.mercadolibre.com.ar^
-||analytics.mercadopago.com.ar^
 ||tracking.mercadopago.com.ar^
 ||events.mercadopago.com.ar^
 ||metrics.mercadopago.com.ar^
@@ -126,7 +116,6 @@
 ||account-api.dji.com^
 ||app-h5.dji.com^
 ||mimo.skypixel.com^
-||statistical-report.djiservice.org^
 ||dev.hik-connect.com^
 ||dev.eu.hik-connect.com^
 ||dev.us.hik-connect.com^
@@ -144,7 +133,6 @@
 ||telemetry.openai.com^
 ||chatgpt-telemetry.openai.com^
 ||stats.openai.com^
-||events.stats.openai.com^
 ||tracing.openai.com^
 ||telemetry.gemini.google.com^
 ||analytics.gemini.google.com^
@@ -157,7 +145,6 @@
 ||telemetry.copilot.microsoft.com^
 ||copilot-telemetry.microsoft.com^
 ||telemetry.githubcopilot.com^
-||copilot-telemetry.githubusercontent.com^
 ||analytics.perplexity.ai^
 ||telemetry.perplexity.ai^
 ||errors.perplexity.ai^
@@ -175,8 +162,6 @@
 ! ==================================================
 ! APPS ESPECÍFICAS Y SITIOS MANUALES
 ! ==================================================
-||sentry-webapp.quillbot.com^
-||collector.quillbot.com^
 ||analytics.4kdownload.com^
 ||telemetry.4kdownload.com^
 ||calendarpushsubscription-pa.googleapis.com^
@@ -184,12 +169,19 @@
 ||sstats.adobe.com^
 ||adobe.com.ssl.d1.sc.omtrdc.net^
 ||dc-telemetry-proxy-83847352264.europe-west1.run.app^
-||telemetry.desktopcommander.app^
-||improving.duckduckgo.com^
 ||log.arc.net^
 ||telemetry.arc.net^
 ||pastebin.com^
 ||apksam.com^
+
+! ==================================================
+! PLAYSTATION 3 — PROMOCIONES / VISTAS DE TIENDA (NO TELEMETRÍA)
+! Reglas preexistentes trasladadas del complemento de juegos.
+! Afectan What's New y vistas previas/logos de PlayStation Store.
+! Fuente: DandelionSprout/adfilt, GameConsoleAdblockList.txt.
+||mercury.dl.playstation.net^
+||nsx.np.dl.playstation.net^
+||nsx-e.np.dl.playstation.net^
 
 ! ==================================================
 ! EXCEPCIONES Y REGLAS DE PERMISO
@@ -221,7 +213,6 @@
 
 ! Twitch
 @@||twitch.tv^
-@@||player.twitch.tv^
 
 ! Apple App Store
 @@||bag.itunes.apple.com^
@@ -234,5 +225,4 @@
 ||microfrontend-analytics-cdn.spotifycdn.com^$badfilter
 @@||audio-uploaded-default-production.s3.us-west-1.amazonaws.com^
 @@||sirius.mwbsys.com^
-@@||dns.adguard-dns.com^
 @@||adguard-dns.com^

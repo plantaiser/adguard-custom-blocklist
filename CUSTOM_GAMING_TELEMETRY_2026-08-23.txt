@@ -1,57 +1,39 @@
 ! ==================================================
 ! CUSTOM GAMING TELEMETRY — 2026-09-26
 ! AdGuard Home / AdBlock DNS syntax
-! Complemento de la lista personalizada de plantaiser.
-! Objetivo: telemetría y analítica específica de consolas
-! y servicios de analítica usados por juegos Android/iOS.
-!
-! REVISIÓN DE REDUNDANCIAS:
-! - Firebase / Google Analytics / App Measurement: ya cubiertos.
-! - AppsFlyer / Adjust / Branch: ya cubiertos.
-! - Sentry / Datadog: ya cubiertos.
-! - Microsoft/Aria: no se agregan reglas Xbox en este complemento.
-! - No se agregan dominios de login, PSN/Xbox/Nintendo Store,
-!   matchmaking ni servidores de juego.
-! - Nintendo: no se agregan dominios dudosos sin verificar que sean
-!   específicamente de telemetría.
-!
-! FUENTES VERIFICADAS:
-! PlayStation telemetry: block-console-servers (actualización 2026-09-20).
-! GameAnalytics: documentación oficial del servicio.
-! Unity Analytics: documentación oficial de Unity.
+! Complemento de la lista principal y HaGeZi Pro.
+! Cobertura y dependencias: README.md / AUDITORIA-CONSOLAS-2026-09-26.md
+! No es una lista completa de toda la telemetría de todas las consolas.
+! Los dominios no se limitan geográficamente a Argentina.
 ! ==================================================
 
-! ==================================================
-! PLAYSTATION — TELEMETRÍA / ANALÍTICA
-! ==================================================
+! PLAYSTATION — recopilación de telemetría de consola
+! Fuente: https://github.com/DandelionSprout/adfilt/blob/master/GameConsoleAdblockList.txt
 ||telemetry-console.api.playstation.com^
 ||telemetry-cii.api.playstation.com^
-||mercury.dl.playstation.net^
-||nsx.np.dl.playstation.net^
-||nsx-e.np.dl.playstation.net^
 
-! ==================================================
-! JUEGOS ANDROID / iOS — GAMEANALYTICS
-! ==================================================
-||api.gameanalytics.com^
-||sandbox-api.gameanalytics.com^
+! NINTENDO SWITCH — reportes de uso/juego y errores
+! Fuente: https://github.com/kinnay/NintendoClients/wiki/Telemetry-Servers
+||receive-lp1.dg.srv.nintendo.net^
+||receive-lp1.er.srv.nintendo.net^
+! Reportes en tiempo real; clasificado por Game Console Adblock List.
+! Fuente: https://github.com/DandelionSprout/adfilt/blob/master/GameConsoleAdblockList.txt
+||realtime-receive-lp1.dg.srv.nintendo.net^
 
-! ==================================================
-! JUEGOS ANDROID / iOS — UNITY ANALYTICS
-! ==================================================
-||collect.analytics.unity3d.com^
+! NINTENDO SWITCH 2 — reportes de uso/juego y errores
+! Fuente: https://github.com/kinnay/NintendoClients/wiki/Telemetry-Servers
+||receive.p01.lp1.dg.srv.nintendo.net^
+||receive.p01.lp1.er.srv.nintendo.net^
 
-! ==================================================
-! NOTAS DE COMPATIBILIDAD
-! ==================================================
-! No bloquear dominios amplios como playstation.com, xbox.com,
-! nintendo.com, googleapis.com, apple.com o unity3d.com completos.
-! Este archivo apunta únicamente a endpoints de recopilación/analítica
-! identificados como tales.
+! COBERTURA EXTERNA COMPROBADA — no duplicar aquí
+! HaGeZi Pro: vortex.data.microsoft.com, vortex-win.data.microsoft.com,
+! crash.steampowered.com, gameanalytics.com, analytics.unity3d.com.
+! Native Vendors (copia 2026-09-25): events.data.microsoft.com.
+! Esto no equivale a cobertura completa de Xbox, Steam Deck o juegos.
 !
-! Xbox: este complemento no incluye reglas Microsoft/Aria/Vortex.
-! Su cobertura depende de las otras listas activadas en AdGuard Home.
-!
-! Nintendo: no se añadieron endpoints sin evidencia suficiente para
-! evitar bloquear servicios funcionales de Nintendo Switch.
-! ==================================================
+! COMPATIBILIDAD
+! No se agregan bloqueos generales de PSN, Xbox Live, Nintendo,
+! autenticación, tiendas, CDN de actualizaciones ni matchmaking.
+! No se modifica la sección "Servicios bloqueados" del router.
+! El bloqueo de reportes puede afectar estadísticas y diagnósticos.
+! No se ha probado el funcionamiento en consolas físicas.
