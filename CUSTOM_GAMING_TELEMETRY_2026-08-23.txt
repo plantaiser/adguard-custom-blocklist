@@ -1,18 +1,5 @@
 ! ==================================================
-! COSAS RARAS
-! ==================================================
-||hcopsrtfg.com^
-||hddbdfd7vo.com^
-||ucpjdhivl.com^
-||jgrqyxupl.com^
-||hetvomaug.com^
-||cfh4cd324.com^
-||854f31ce.com^
-||g4gdfht6.com^
-@@||57j4mtvcjjf7siqnnvkixb5d3i0uvjei.lambda-url.us-east-1.on.aws^
-
-! ==================================================
-! CUSTOM GAMING TELEMETRY — 2026-09-20
+! CUSTOM GAMING TELEMETRY — 2026-09-26
 ! AdGuard Home / AdBlock DNS syntax
 ! Complemento de la lista personalizada de plantaiser.
 ! Objetivo: telemetría y analítica específica de consolas
@@ -22,7 +9,7 @@
 ! - Firebase / Google Analytics / App Measurement: ya cubiertos.
 ! - AppsFlyer / Adjust / Branch: ya cubiertos.
 ! - Sentry / Datadog: ya cubiertos.
-! - Microsoft/Aria: ya cubiertos; por eso no se duplican reglas Xbox.
+! - Microsoft/Aria: no se agregan reglas Xbox en este complemento.
 ! - No se agregan dominios de login, PSN/Xbox/Nintendo Store,
 !   matchmaking ni servidores de juego.
 ! - Nintendo: no se agregan dominios dudosos sin verificar que sean
@@ -62,8 +49,8 @@
 ! Este archivo apunta únicamente a endpoints de recopilación/analítica
 ! identificados como tales.
 !
-! Xbox: la lista principal ya contiene los endpoints Microsoft/Aria/
-! Vortex utilizados para telemetría y diagnósticos; no se duplican aquí.
+! Xbox: este complemento no incluye reglas Microsoft/Aria/Vortex.
+! Su cobertura depende de las otras listas activadas en AdGuard Home.
 !
 ! Nintendo: no se añadieron endpoints sin evidencia suficiente para
 ! evitar bloquear servicios funcionales de Nintendo Switch.

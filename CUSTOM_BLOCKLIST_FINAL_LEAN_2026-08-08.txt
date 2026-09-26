@@ -1,4 +1,3 @@
-
 ! ==================================================
 ! COSAS RARAS
 ! ==================================================
@@ -27,7 +26,6 @@
 ||epgshare01.online^
 ||iptv-epg.org^
 ||t.me^
-||sirius.mwbsys.com^
 ||bet365.com^
 ||betsson.com^
 ||bplay.bet.ar^
@@ -194,8 +192,14 @@
 ||apksam.com^
 
 ! ==================================================
-! EXCEPCIONES Y REGLAS DE PERMISO (OBLIGATORIAS AL FINAL)
+! EXCEPCIONES Y REGLAS DE PERMISO
 ! ==================================================
+
+! Fire TV / Fire Stick — dominios bloqueados confirmados (2026-09-26)
+! Excepciones para actualizaciones y API; no permiten amazon.com completo.
+! Se aplican a todos los clientes que utilicen esta lista.
+@@||softwareupdates.amazon.com^
+@@||api.amazon.com^
 
 ! App Tiempo / Weather de Apple (macOS / iOS)
 @@||weather-data.apple.com^
