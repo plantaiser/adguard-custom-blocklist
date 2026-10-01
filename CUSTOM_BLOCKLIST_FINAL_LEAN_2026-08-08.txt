@@ -1,4 +1,4 @@
-! Revisión: 2026-09-26. Complemento de HaGeZi Pro; ver README.md.
+! Revisión: 2026-10-01. Complemento de HaGeZi Pro; ver README.md.
 ! Bloqueos cubiertos por HaGeZi Pro retirados para evitar redundancias.
 ! ==================================================
 ! COSAS RARAS
@@ -187,11 +187,39 @@
 ! EXCEPCIONES Y REGLAS DE PERMISO
 ! ==================================================
 
-! Fire TV / Fire Stick — dominios bloqueados confirmados (2026-09-26)
-! Excepciones para actualizaciones y API; no permiten amazon.com completo.
-! Se aplican a todos los clientes que utilicen esta lista.
+! Fire TV / Fire Stick — compatibilidad revisada el 2026-10-01
+! Origen observado: servicio Amazon de AdGuard Home (FilterListID -2).
+! Estos permisos compensan bloqueos observados; no cambian Servicios bloqueados.
+! Aplican a todos los clientes que utilizan esta lista.
+! Se conservan los dos permisos anteriores y se agregan hosts del registro.
+! No se permiten amazon.com, amazonaws.com ni cloudfront.net completos.
+! No se agregan permisos para publicidad o telemetría identificada.
+! La presencia en el registro no demuestra que cada host sea indispensable.
+! Falta verificar descargas y reproducción en el dispositivo tras actualizar.
 @@||softwareupdates.amazon.com^
 @@||api.amazon.com^
+@@||appstore-tv-prod-na.amazon.com^
+@@||mas-sdk.amazon.com^
+@@||mas-ext.amazon.com^
+@@||arcus-uswest.amazon.com^
+@@||msh.amazon.com^
+@@||dp-gw-na.amazon.com^
+@@||dcape-na.amazon.com^
+@@||dcapsproxy-na.amazon.com^
+@@||pact-proxy.amazon.com^
+@@||ftvpes-na.amazon.com^
+@@||ftvr-na.amazon.com^
+@@||dp-discovery-na-ext.amazon.com^
+@@||device-messaging-na.amazon.com^
+@@||idc-service-oz.amazon.com^
+@@||andr-25-aftmm-724601010.api.amazonvideo.com^
+@@||andr-25-aftmm-0.api.amazonvideo.com^
+@@||m.media-amazon.com^
+@@||images-na.ssl-images-amazon.com^
+@@||d3h5bk8iotgjvw.cloudfront.net^
+@@||d21m0ezw6fosyw.cloudfront.net^
+@@||amazon-web-app-whitelist.s3.amazonaws.com^
+@@||spectrum.s3.amazonaws.com^
 
 ! App Tiempo / Weather de Apple (macOS / iOS)
 @@||weather-data.apple.com^
