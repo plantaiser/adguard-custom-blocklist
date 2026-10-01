@@ -7,15 +7,26 @@ Listas personales para AdGuard Home. Incluyen bloqueos elegidos por el autor y e
 
 Se conservan los nombres de archivo para mantener las suscripciones existentes.
 
-## Fire TV / Fire Stick
+## Fire TV / Fire Stick — revisión del 01/10/2026
 
-La revisión del 26/09/2026 encontró consultas bloqueadas a `softwareupdates.amazon.com` y `api.amazon.com` por el servicio **Amazon** de AdGuard Home (regla `||amazon.com^`, identificador de lista -2), no por una regla de bloqueo de estos archivos.
+La revisión de ambas listas no encontró reglas de bloqueo que coincidieran con los hosts de tienda y reproducción de Amazon implicados. Los registros de AdGuard Home atribuyeron esos bloqueos al servicio **Amazon**, con identificador de lista **-2**: `||amazon.com^`, `||amazonvideo.com^`, `||cloudfront.net^` y otros dominios de infraestructura. No es un bloqueo originado en estos dos archivos.
 
-La lista principal incorpora excepciones limitadas a esos dos dominios y sus subdominios. No permite Amazon, AWS o CloudFront completos. Las excepciones se aplican a todos los clientes que usan la lista; no son exclusivas de un Fire Stick.
+La lista principal conserva los dos permisos del 26/09/2026 (`softwareupdates.amazon.com` y `api.amazon.com`) y agrega **22 excepciones limitadas** a hosts observados bloqueados en las consultas del Fire Stick. Incluyen `appstore-tv-prod-na.amazon.com`, `mas-ext.amazon.com`, `mas-sdk.amazon.com`, endpoints de Amazon Video, imágenes y dos distribuciones concretas de CloudFront. La presencia de un host en el registro confirma el bloqueo, pero no prueba que cada uno sea indispensable.
 
-En AdGuard Home 0.107.79 las reglas de permiso se evalúan antes de los servicios bloqueados, siempre que el filtrado por listas esté habilitado. Después de actualizar la suscripción, verificar las consultas del dispositivo y volver a intentar la actualización. Otros dominios o reglas pueden requerir revisión: no se ha confirmado una actualización completa del Fire Stick.
+No se permiten Amazon, AWS ni CloudFront completos. No se agregan excepciones para los hosts de publicidad o telemetría identificados, como `mads.amazon.com`, `unagi-na.amazon.com`, `fls-na.amazon.com` o `minerva.devices.a2z.com`. Los bloqueos preexistentes se conservan.
 
-Si se prefiere una excepción exclusiva del dispositivo, se debe configurar por cliente en AdGuard Home.
+La lista de juegos mantiene sus siete reglas: no se encontraron bloqueos de Amazon que quitar. Solo se actualizan los comentarios de revisión; los permisos permanecen en la principal para evitar duplicaciones.
+
+En AdGuard Home 0.107.79 el motor evalúa las listas antes de los servicios bloqueados y una coincidencia de permiso finaliza esa comprobación, siempre que el filtrado por listas esté habilitado. Las excepciones se aplican a **todos los clientes que usan la lista** y al dominio indicado y sus subdominios. No modifican la configuración de “Servicios bloqueados”.
+
+### Aplicación y comprobación
+
+1. Actualizar las suscripciones desde **Filtros → Listas de bloqueo DNS → Buscar actualizaciones**.
+2. Limpiar la caché DNS de AdGuard Home y reiniciar el Fire Stick para descartar respuestas bloqueadas almacenadas.
+3. Intentar una descarga de Appstore y reproducir Fire TV Channels / News.
+4. Revisar en el registro de consultas si aparecen otros dominios bloqueados y qué regla los bloquea.
+
+Publicar en GitHub **no confirma que el router ya haya descargado la versión nueva**. No se ha verificado todavía una descarga ni reproducción completas tras esta revisión. Las excepciones cubren los hosts observados, no garantizan todos los servicios, regiones, versiones o futuros endpoints. Si aparecen más bloqueos por el servicio Amazon, la solución más completa es excluir únicamente Amazon de los servicios bloqueados del cliente Fire Stick, conservando los demás servicios y filtros. No hace falta desactivar toda la protección de AdGuard.
 
 ## Revisión de las listas
 
