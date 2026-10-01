@@ -1,5 +1,5 @@
 ! ==================================================
-! CUSTOM GAMING TELEMETRY — 2026-09-26
+! CUSTOM GAMING TELEMETRY — revisión 2026-10-01
 ! AdGuard Home / AdBlock DNS syntax
 ! Complemento de la lista principal y HaGeZi Pro.
 ! Cobertura y dependencias: README.md / AUDITORIA-CONSOLAS-2026-09-26.md
@@ -37,3 +37,10 @@
 ! No se modifica la sección "Servicios bloqueados" del router.
 ! El bloqueo de reportes puede afectar estadísticas y diagnósticos.
 ! No se ha probado el funcionamiento en consolas físicas.
+
+! FIRE TV / FIRE STICK — revisión 2026-10-01
+! No se encontraron reglas que bloqueen los hosts Amazon implicados.
+! Se conservan las siete reglas de juegos sin cambios.
+! Los permisos de compatibilidad están en la lista principal para no duplicarlos.
+! El servicio Amazon de AdGuard Home puede bloquear tienda y reproducción
+! independientemente de esta lista. Ver README.md.
